@@ -1,5 +1,5 @@
-const Twisted = require('twisted')
-const { LolApi, Constants, Dto } = Twisted
+import Twisted from 'twisted'
+const { LolApi, Constants } = Twisted
 
 function newApi(apiKey: string) {
   return new LolApi({
@@ -31,7 +31,7 @@ function getMatchDetails(api, matchId: string) {
   return api.MatchV5.get(matchId, Constants.RegionGroups.AMERICAS).then(data => data.response)
 }
 
-module.exports = {
+export default {
   getSummonerMatchesByName,
   newApi
 }
