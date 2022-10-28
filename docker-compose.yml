@@ -29,8 +29,8 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
 
-  kafka-ui:
-    container_name: kafka-ui
+  broker-ui:
+    container_name: broker-ui
     image: provectuslabs/kafka-ui:v0.4.0
     restart: always
     networks:
