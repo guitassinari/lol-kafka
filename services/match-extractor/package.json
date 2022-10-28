@@ -18,6 +18,7 @@
   "homepage": "https://github.com/guitassinari/lol-kafka#readme",
   "dependencies": {
     "dotenv": "^16.0.1",
+    "kafkajs": "^2.2.0",
     "twisted": "^1.48.0"
   },
   "devDependencies": {

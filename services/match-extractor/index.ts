@@ -1,5 +1,5 @@
-const Env = require('./environment')
-const Api = require('./riot-api')
+const Env = require('./src/environment')
+const Api = require('./src/riot-api')
 
 const summonersToFetchData = Env.summoners()
 
