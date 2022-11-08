@@ -1,12 +1,5 @@
 FROM node:18.12.0-alpine3.16
 
-RUN apk update && apk add bash
-
-WORKDIR /scripts
-COPY ./docker/scripts .
-RUN chmod +x ./*
-RUN ./install-curl.sh
-
 # Add Tini for proper Kernel signals handling.
 # See: https://github.com/nodejs/docker-node/blob/main/docs/BestPractices.md#handling-kernel-signals
 RUN apk add --no-cache tini

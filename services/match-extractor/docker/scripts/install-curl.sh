@@ -1,1 +1,0 @@
-apk --no-cache add curl
